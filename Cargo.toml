@@ -1,0 +1,12 @@
+[package]
+name = "asset-pack-rs"
+version = "0.1.0"
+authors = ["thane98"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+mila = { git = "https://github.com/thane98/mila", rev = "b3d5ecc" }
+clap = "3.0.0-beta.2"
