@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 anyhow = "1.0"
-mila = { git = "https://github.com/thane98/mila", rev = "b3d5ecc" }
+mila = { git = "https://github.com/thane98/mila", rev = "6b0190e" }
 clap = "3.0.0-beta.2"
