@@ -19,7 +19,7 @@ fn read_bin_archive_input(input_path: &Path) -> anyhow::Result<BinArchive> {
     } else {
         Ok(input)
     }?;
-    let archive = BinArchive::from_bytes(&input)
+    let archive = BinArchive::from_bytes(&input, mila::Endian::Little)
         .context("Failed to deserialize bin archive.")?;
     Ok(archive)
 }

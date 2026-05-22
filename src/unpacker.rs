@@ -63,7 +63,7 @@ pub fn pack(text: &str) -> anyhow::Result<BinArchive> {
 
     let mut pointers: HashMap<String, usize> = HashMap::new();
     let mut pointer_sources: Vec<(usize, String)> = Vec::new();
-    let mut archive = BinArchive::new();
+    let mut archive = BinArchive::new(mila::Endian::Little);
     archive.allocate_at_end(size * 4);
     let mut writer = BinArchiveWriter::new(&mut archive, 0);
     for i in 0..lines.len() {
